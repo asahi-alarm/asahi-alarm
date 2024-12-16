@@ -7,8 +7,8 @@ These packages are for the Arch linux ARM variant of Asahi Linux.
 First import the signing key
 
 ```bash
-sudo pacman-key --recv-keys 1F35A37F9D85CBC2B74F595E37CE6162C969C50E
-sudo pacman-key --lsign-key 1F35A37F9D85CBC2B74F595E37CE6162C969C50E
+sudo pacman-key --recv-keys 12CE6799A94A3F1B5DDFFE88F576553597FB8FEB
+sudo pacman-key --lsign-key 12CE6799A94A3F1B5DDFFE88F576553597FB8FEB
 ```
 
 Create file `/etc/pacman.d/mirrorlist.asahi-alarm` with the following contents
@@ -28,8 +28,10 @@ You can delete `/etc/pacman.d/mirrorlist.asahi` now.
 
 Remove the old keyring package:
 
+Install the new keyring package (will replace the legacy `asahilinux-keyring`):
+
 ```
-sudo pacman -Rdd asahilinux-keyring
+sudo pacman -S asahi-alarm-keyring
 ```
 
 Update
