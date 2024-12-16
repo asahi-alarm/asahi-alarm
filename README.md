@@ -26,8 +26,6 @@ Include = /etc/pacman.d/mirrorlist.asahi-alarm
 
 You can delete `/etc/pacman.d/mirrorlist.asahi` now.
 
-Remove the old keyring package:
-
 Install the new keyring package (will replace the legacy `asahilinux-keyring`):
 
 ```
