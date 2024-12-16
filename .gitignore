@@ -1,0 +1,4 @@
+*.xz
+*.sig
+asahi-alarm.db*
+asahi-alarm.files*
