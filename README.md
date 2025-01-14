@@ -41,6 +41,20 @@ sudo pacman -S asahi-alarm-keyring
 sudo pacman -Syyu
 ```
 
+## Steam
+
+We now also have steam support! If you are on our new repo, you can just
+
+```bash
+sudo pacman -Sy steam
+```
+
+This should install the steam launcher and all required components.
+
+Notes:
+- on some systems `xhost +` maybe necessary first
+- on some systems `echo "nameserver 1.1.1.1 | sudo tee -a /etc/resolv.conf` may be necessary. (pro tip: set this DNS server in your DHCP server/router)
+
 ## New installs
 
 We have created new installer images, we are investigating hosting options at the moment.
