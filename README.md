@@ -55,7 +55,7 @@ sudo pacman -Sy steam
 This should install the steam launcher and all required components.
 
 Notes:
-- on some systems `xhost +` maybe necessary first
+- ~~on some systems `xhost +` maybe necessary first~~ fixed
 - on some systems `echo "nameserver 1.1.1.1 | sudo tee -a /etc/resolv.conf` may be necessary. (pro tip: set this DNS server in your DHCP server/router)
 
 
