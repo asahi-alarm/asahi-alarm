@@ -65,9 +65,6 @@ We have created new installer images, we are investigating hosting options at th
 The files are too big to host on github releases, and free hosting plans would quickly
 run into bandwidth issues.
 
-For the adventurous, we have a base installer image up, desktop images are too big.
-There are a few manual steps, outlined [here](manual-install.md)
-
 ## Contributing
 
 If you want to help, you can find us at https://github.com/asahi-alarm or on matrix https://matrix.to/#/#asahi-alarm:matrix.org

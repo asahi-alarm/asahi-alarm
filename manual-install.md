@@ -1,6 +1,6 @@
 # Manual installation
 
-Note: you need to have a way to connect to the internet, so you need to be able to [setup wifi](#setting-up-wifi-using-iwctl) using the commandline,
+Note: you need to have a way to connect to the internet, so you need to be able to [setup wifi](#setting-up-wifi-using-nmcli) using the commandline,
 or use a USB ethernet adapter.
 
 ```bash
@@ -13,7 +13,6 @@ After installation you can install the desktop of your choice and the following 
 - asahi-desktop-meta
 - calamares
 - asahi-calamares-configs
-- networkmanager
 - feh
 - xorg-server
 - xf86-input-evdev
@@ -29,14 +28,11 @@ After installing your desktop, enable calamares, network manager, bluetooth and 
 ```
 systemctl enable calamares.service
 systemctl enable <gdm|sddm|other>
-systemctl enable NetworkManager
 systemctl enable bluetooth
 ```
 
 Now reboot to get into our calamares setup utility to setup your user, timezone, etc. After calamares has finished, the root user will be disabled.
 
-### Setting up wifi using iwctl
-- `systemctl start iwd`
-- `iwctl station wlan0 connect <ssid>`
-- `dhcpcd wlan0`
+### Setting up wifi using nmcli
+- `nmcli device wifi connect <SSID> password <password>`
 
