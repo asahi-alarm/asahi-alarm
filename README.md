@@ -2,6 +2,17 @@
 
 These packages are for the Arch Linux ARM (ALARM) variant of Asahi Linux.
 
+## Install
+
+```bash
+curl -SL https://asahi-alarm.org/installer-bootstrap.sh | sh
+```
+
+**Follow the installation instructions in the script to the letter.**
+
+We have pre-built images for GNOME and KDE (Plasma). If you want something else, choose the Minimal install and follow
+the [manual installation](manual-install.md#manual-installation) steps.
+
 ## Switch from the old asahi repo to this one
 
 If you already have the (old) Asahi Linux Arch variant installed, you can follow the steps below
@@ -58,12 +69,6 @@ Notes:
 - ~~on some systems `xhost +` maybe necessary first~~ fixed
 - on some systems `echo "nameserver 1.1.1.1 | sudo tee -a /etc/resolv.conf` may be necessary. (pro tip: set this DNS server in your DHCP server/router)
 
-
-## New installs
-
-We have created new installer images, we are investigating hosting options at the moment.
-The files are too big to host on github releases, and free hosting plans would quickly
-run into bandwidth issues.
 
 ## Contributing
 
