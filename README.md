@@ -5,7 +5,7 @@ These packages are for the Arch Linux ARM (ALARM) variant of Asahi Linux.
 ## Install
 
 ```bash
-curl -SL https://asahi-alarm.org/installer-bootstrap.sh | sh
+curl https://asahi-alarm.org/installer-bootstrap.sh | sh
 ```
 
 **Follow the installation instructions in the script to the letter.**

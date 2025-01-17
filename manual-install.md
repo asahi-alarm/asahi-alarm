@@ -4,7 +4,7 @@ Note: you need to have a way to connect to the internet, so you need to be able 
 or use a USB ethernet adapter.
 
 ```bash
-curl -SL https://asahi-alarm.org/installer-bootstrap.sh | sh
+curl https://asahi-alarm.org/installer-bootstrap.sh | sh
 ```
 
 **Follow the installation instructions in the script to the letter.**
