@@ -11,33 +11,18 @@ curl https://asahi-alarm.org/installer-bootstrap.sh | sh
 
 Pick option 1 (Asahi Alarm Minimal)
 
-After installation you can install the desktop of your choice and the following packages:
-
-- asahi-desktop-meta
-- calamares
-- asahi-calamares-configs
-- feh
-- xorg-server
-- xf86-input-evdev
-- xorg-xinput
-- xorg-xinit
-- xorg-xdpyinfo
-- bluez-utils
-- bluez-tools
-
 You can use root/root as password to setup networking and install your desktop environment.
 
-After installing your desktop, enable calamares, network manager, bluetooth and your login manager:
+After installation you can install the desktop of your choice and the following package: asahi-desktop-meta
+
+After installing your desktop, enable bluetooth and your login manager:
 
 ```
-systemctl enable calamares.service
 systemctl enable <gdm|sddm|other>
 systemctl enable bluetooth
 ```
 
-Note: you must install at least `mutter` or `kwin` if you didn't install GNOME or KDE desktop for the calamares first time script to work.
-
-Now reboot to get into our calamares setup utility to setup your user, timezone, etc. After calamares has finished, the root user will be disabled.
+Add a non-priviledged user and disable the root user.
 
 ### Setting up wifi using nmcli
 
