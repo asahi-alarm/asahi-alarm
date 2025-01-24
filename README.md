@@ -66,10 +66,11 @@ sudo pacman -Sy steam
 This should install the steam launcher and all required components.
 
 Notes:
+
 - ~~on some systems `xhost +` maybe necessary first~~ fixed
 - on some systems `echo "nameserver 1.1.1.1 | sudo tee -a /etc/resolv.conf` may be necessary. (pro tip: set this DNS server in your DHCP server/router)
 
-
 ## Contributing
 
-If you want to help, you can find us at https://github.com/asahi-alarm or on matrix https://matrix.to/#/#asahi-alarm:matrix.org
+If you want to help, you can find us at https://github.com/asahi-alarm or on matrix https://matrix.to/#/#asahi-alarm:matrix.org.
+If you want to [donate](https://www.paypal.me/asahialarm) (web hosting isn't free), thank you!
