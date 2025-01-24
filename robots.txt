@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /*.zip$
+Disallow: /*.json$
+Disallow: /*.sh$
+
