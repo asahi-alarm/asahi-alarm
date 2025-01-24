@@ -9,6 +9,12 @@
         font-family: Arial, sans-serif;
         padding: 20px;
         background: #d9d9d9;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .content {
+        flex: 1;
       }
       .script-box {
         background: #272822;
@@ -25,6 +31,28 @@
       h1 {
         font-size: 1.5em;
       }
+      .button-container {
+        text-align: center;
+        margin-top: auto;
+        padding: 20px 0;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #fff;
+        background-color: #333;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 10px;
+      }
+      .button img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
     </style>
   </head>
   <body>
@@ -37,12 +65,29 @@
     />
     <p style="height: 20px"></p>
     <h2 style="text-align: center">Install</h2>
-    <p style="text-align: center; font-weight: bold; font-size: 1em;">Run the following from macOS Terminal to install Asahi Alarm</p>
-
-    <p>
-    <div style="text-align: center">
-    <div class="script-box"> <code>curl https://asahi-alarm.org/installer-bootstrap.sh | sh</code> </div>
-    </div>
+    <p style="text-align: center; font-weight: bold; font-size: 1em;">
+      Run the following from macOS Terminal to install Asahi Alarm
     </p>
+    <p>
+      <div style="text-align: center">
+        <div class="script-box"> <code>curl https://asahi-alarm.org/installer-bootstrap.sh | sh</code> </div>
+      </div>
+    </p>
+
+    <!-- GitHub and Matrix buttons -->
+    <div class="button-container">
+      <a href="https://github.com/your-repo" target="_blank" class="button">
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" />
+        GitHub
+      </a>
+      <a href="https://matrix.to/#/#asahi-alarm:matrix.org" target="_blank" class="button">
+        <img src="mastodon.svg" alt="Matrix Logo" />
+        Matrix
+      </a>
+      <a href="https://www.paypal.me/asahialarm" target="_blank" class="button">
+        <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal Logo" />
+        Donate with PayPal
+      </a>
+    </div>
   </body>
 </html>
