@@ -13,14 +13,7 @@ Pick option 1 (Asahi Alarm Minimal)
 
 You can use root/root as password to setup networking and install your desktop environment.
 
-After installation you can install the desktop of your choice and the following package: asahi-desktop-meta
-
-After installing your desktop, enable bluetooth and your login manager:
-
-```
-systemctl enable <gdm|sddm|other>
-systemctl enable bluetooth
-```
+After installation you can install the desktop of your choice and the following package: `asahi-desktop-meta`.
 
 Add a non-priviledged user and disable the root user.
 
