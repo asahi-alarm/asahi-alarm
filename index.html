@@ -69,9 +69,6 @@
     <p style="text-align: center; font-weight: bold; font-size: 1em;">
       Asahi Alarm is an Arch Linux ARM distribution for Apple Silicon macs. We build on top of the <a href="https://asahilinux.org">Asahi Linux project</a>, without which this would not be possible.
     </p>
-    <p style="text-align: center; font-size: 1em;">
-      We offer KDE plasma, GNOME, XFCE, MATE, LXQt and Hyprland desktop environments, as well as a minimal installation (do read <a href="https://github.com/asahi-alarm/asahi-alarm/blob/main/manual-install.md">the manual install steps</a> if you choose this option).
-    </p>
     <h2 style="text-align: center">Install</h2>
     <p style="text-align: center; font-weight: bold; font-size: 1em;">
       Run the following from macOS Terminal to install Asahi Alarm
@@ -79,9 +76,13 @@
         <div class="script-box"> <code>curl https://asahi-alarm.org/installer-bootstrap.sh | sh</code> </div>
       </div>
     </p>
-    <p style="text-align: center; font-weight: bold; font-size: 1em;">
-      Choose minimal for a bare bones install, suitable for a server. Choose desktop if you want to intall a desktop environment. At first boot, the calamares installer
-      will ask which desktop you want, and install all required packages. 
+    <p style="text-align: center; font-size: 1em;">
+      Choose minimal for a bare bones install, suitable for a server. Do read <a href="https://github.com/asahi-alarm/asahi-alarm/blob/main/manual-install.md">the manual install steps</a> if you choose this option
+    </p>
+
+    <p style="text-align: center; font-size: 1em;">
+      Choose desktop if you want to intall a desktop environment. At first boot, the calamares installer
+      will ask which desktop you want (KDE plasma, GNOME, XFCE, MATE, LXQt and Hyprland), and install all required packages.
 
       There is now also a BTRFS variant to minimal and desktop. It's setup with 2 subvolumes @ for / and @home for /home.
     </p>
